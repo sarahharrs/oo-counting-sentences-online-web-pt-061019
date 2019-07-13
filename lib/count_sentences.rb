@@ -3,21 +3,19 @@ require 'pry'
 class String
 
   def sentence?
-    if string.end with? "." TRUE
-  else
-    FALSE
-    
+    self.end_with? "."
   end
 
   def question?
-
+ self.end_with? "?" eq(true)
   end
 
   def exclamation?
-
+self.end_with "!"
   end
 
   def count_sentences
-
+    self.split(/\.|\?|\!/).delete_if {|i| i.size < 2}.size
   end
 end
+string.new = "Hello!"
