@@ -15,7 +15,7 @@ self.end_with "!"
   end
 
   def count_sentences
-    self.split(/\.|\?|\!/).delete_if {|i| i.size < 2}.size
+    self.split(/\.|\?|\!/).delete_if {|i| i.size < 3}.size
   end
 end
 string.new = "Hello!"
