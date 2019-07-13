@@ -7,7 +7,7 @@ class String
   end
 
   def question?
- self.end_with? "?" eq(true)
+ self.end_with? "?"
   end
 
   def exclamation?
@@ -18,4 +18,6 @@ self.end_with "!"
     self.split(/\.|\?|\!/).delete_if {|i| i.size < 3}.size
   end
 end
-string.new = "Hello!"
+string.new = "Hi, my name is Sophie."
+string.new = "What's your name?"
+string.new = "Happy Halloween!
